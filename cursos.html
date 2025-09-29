@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Guevara</title>
+</head>
+<body>
+    <h1>Cursos</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ir a menù principal</a></li>
+            <li><a href="registro.html">Ir a registro a boletin de noticias</a></li>
+            <li><a href="lenguajes.html">Ir a informaciòn</a></li>
+            <li><a href="validaciòn.html">Ir a validaciòn de datos</a></li>
+        </ul>
+    </nav>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Inscripciòn a un curso</legend>
+
+            <label for="Nombre">Nombres: </label>
+            <input type="text" id="Nombre" name="Nombre" required>
+            <br><br>
+            <label for="Apellido">Apellidos: </label>
+            <input type="text" id="Apellido" name="Apellido" required>
+            <br><br>
+            <label for="DNI">Documento de identidad(DNI): </label>
+            <input type="text" id="DNI" name="DNI" required>
+            <br><br>
+            <label for="correo">Correo Electronico: </label>
+            <input type="email" id="correo" name="correo" required
+                    placeholder="ejemplo@correo.com">
+            <br><br>
+            <label for="turno">Seleccion de cursos:</label>
+            <select name="turno" id="turno">
+                <option>Matemàtica</option>
+                <option>Ciencia y Tecnologia</option>
+                <option>Historia</option>
+            </select>
+            <br><br>
+            <label>Seleccione modalidad:</label>
+                <input type="radio" id="pres" name="pres" value="P">
+                <label for="pres">Presencial</label>
+                <input type="radio" id="virt" name="virt" value="V">
+                <label for="virt">Virtual</label>
+            <br><br>
+            <label for="turno">Seleccione el turno:</label>
+            <select multiple name="turno" id="turno">
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+            <button type="submit">Restablecer</button>
+        </fieldset>
+    </form>
+</body>
+</html>

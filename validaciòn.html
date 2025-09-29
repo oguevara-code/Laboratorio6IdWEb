@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Guevara</title>
+</head>
+<body>
+    <h1>Validaciòn</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">VOlver al menù principal</a></li>
+            <li><a href="registro.html">Ir a registro al boletìn de noticias</a></li>
+            <li><a href="lenguajes.html">Ir a informaciòn</a></li>
+            <li><a href="#">Ir a...</a></li>
+        </ul>
+    </nav>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Validaciones</legend>
+
+            <label for="correo">Correo Electronico: </label>
+            <input type="email" id="correo" name="correo" required
+                   placeholer="ejemplo@correo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br><br>
+
+            <label for="contraseña">Contraseña: </label>
+            <input type="password" id="contraseña" name="contraseña" required
+                    placeholder="Mìmino 8 caracteres" pattern="{8,}">
+            <br><br>
+            <label for="confirm">Confirmar contraseña: </label>
+            <input type="password" id="confirm" name="confirm" required
+            placeholder="Reescriba  la contraseña">
+            <br><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
